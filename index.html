@@ -5,7 +5,7 @@
 <title>Smashing HTML5!</title>
  
 <link rel="stylesheet" href="css/main.css" type="text/css" />
- 
+
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lte IE 7]>
@@ -17,7 +17,7 @@
 <body id="index" class="home">
  <header id="banner" class="body">
   <h1><a href="#">Smashing HTML5! <strong>HTML5 in the year <del>2022</del> <ins>2009</ins></strong></a></h1>
- 
+ <!-- A website should have one h1. <strong> bolds important text-->
   <nav><ul>
     <li class="active"><a href="#">home</a></li>
     <li><a href="#">portfolio</a></li>
@@ -25,7 +25,7 @@
     <li><a href="#">blog</a></li>
     <li><a href="#">contact</a></li>
   </ul></nav>
- 
+ <!-- Use nav tag for semantic reasons to identify the navigation bar-->
 </header><!-- /#banner -->
 
 <aside id="featured" class="body"><article>
@@ -33,7 +33,8 @@
     <img src="images/temp/sm-logo.gif" alt="Smashing Magazine" />
   </figure>
   <hgroup>
- 
+ <!-- an aside tag is used here as the content is not essential to the understanding of the page-->
+ <!-- figure and article tags are used to assist SEO-->
     <h2>Featured Article</h2>
     <h3><a href="#">HTML5 in Smashing Magazine!</a></h3>
   </hgroup>
@@ -43,7 +44,7 @@
 
 
 <section id="content" class="body">
- 
+ <!-- section tags show this is where the main content to understand the page is located-->
   <ol id="posts-list" class="hfeed">
  
     <li><article class="hentry">  
@@ -60,7 +61,7 @@
           By <a class="url fn" href="#">Enrique Ramírez</a>
  
         </address>
-      </footer><!-- /.post-info -->
+      </footer><!-- /.post-info  includes data on date published and by whom-->
  
       <div class="entry-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada tellus.</p>
@@ -137,7 +138,7 @@
     <img src="images/avatar.gif" alt="Smashing Magazine Logo" class="photo" />
     <span class="bio">Smashing Magazine is a website and blog that offers resources and advice to web developers and web designers. It was founded by Sven Lennartz and Vitaly Friedman.</span>
  
-  </address><!-- /#about -->
+  </address><!-- /#about  semantically identifys who created content-->
   <p>2005-2009 <a href="http://smashingmagazine.com">Smashing Magazine</a>.</p>
 </footer><!-- /#contentinfo -->
 </body>
